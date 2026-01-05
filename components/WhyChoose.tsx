@@ -56,24 +56,24 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-12 bg-white">
+    <section className="py-12 sm:py-16 lg:py-7 bg-white">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-10 sm:mb-14">
+        {/* <div className="text-center mb-10 sm:mb-14">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
             Why Choose Us
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Experience the best shopping with our customer-first approach
           </p>
-        </div>
+        </div> */}
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="group flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 hover:bg-white border-2 border-transparent hover:border-gray-200 transition-all duration-300 hover:shadow-xl"
+              className="group flex flex-col items-center text-center p-6 rounded-2xl border-2 border-transparent transition-all duration-300"
             >
               {/* Icon Container */}
               <div

@@ -21,7 +21,7 @@ const StoryBanner = () => {
             src={Story}
             alt="Our Story"
             fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 1280px"
             className="object-cover"
             priority
           />
@@ -40,9 +40,9 @@ const StoryBanner = () => {
             </p>
             <button
               onClick={handleVisitStore}
-              className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
+              className="bg-pink-600 cursor-pointer hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
             >
-              📍 Visit Our Store
+             Visit Our Store
             </button>
           </div>
         </div>

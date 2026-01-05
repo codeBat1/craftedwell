@@ -5,6 +5,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import greenSilkSaree from "../public/emeraldGreenSilk.png"
+import pistaGreenSilkSaree from "../public/pistaGreenSilk.png"
 
 const HomeBanner = () => {
   const banners = [
@@ -12,16 +14,18 @@ const HomeBanner = () => {
       id: 1,
       title: "Summer Collection 2024",
       subtitle: "Discover the latest trends",
-      image:
-        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&h=600&fit=crop",
+      // image:
+      //   "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&h=600&fit=crop",
+      image : greenSilkSaree.src,
       cta: "Shop Now",
     },
     {
       id: 2,
       title: "New Arrivals",
       subtitle: "Get up to 50% off on selected items",
-      image:
-        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&h=600&fit=crop",
+      // image:
+      //   "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&h=600&fit=crop",
+      image: pistaGreenSilkSaree.src,
       cta: "Explore Now",
     },
   ];
@@ -38,7 +42,7 @@ const HomeBanner = () => {
         }}
         pagination={{
           clickable: true,
-          bulletClass: "swiper-pagination-bullet !bg-white/60",
+          bulletClass: "swiper-pagination-bullet",
           bulletActiveClass: "swiper-pagination-bullet-active !bg-white",
         }}
         navigation={{
@@ -78,8 +82,8 @@ const HomeBanner = () => {
         ))}
 
         {/* Custom Navigation Buttons */}
-        <div className="swiper-button-prev !text-white !w-10 !h-10 sm:!w-12 sm:!h-12 after:!text-2xl sm:after:!text-3xl !left-2 sm:!left-4 !hidden md:!flex" />
-        <div className="swiper-button-next !text-white !w-10 !h-10 sm:!w-12 sm:!h-12 after:!text-2xl sm:after:!text-3xl !right-2 sm:!right-4 !hidden md:!flex" />
+        <div className="swiper-button-prev !text-red !w-12 !h-12 sm:!w-12 sm:!h-12 after:!text-2xl sm:after:!text-3xl !left-2 sm:!left-4 !hidden md:!flex" />
+        <div className="swiper-button-next !text-red !w-12 !h-12 sm:!w-12 sm:!h-12 after:!text-2xl sm:after:!text-3xl !right-2 sm:!right-4 !hidden md:!flex" />
       </Swiper>
 
       <style jsx>{`

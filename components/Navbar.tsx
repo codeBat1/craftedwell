@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ShoppingBag, Menu, X } from "lucide-react";
+import Image from "next/image";
+import logo from "../public/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,10 +12,17 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur border-b">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-pink-600">
-            Saree<span className="text-gray-800">Store</span>
+            <Image
+              src={logo}
+              alt="Saree Store Logo"
+              width={70}
+              height={70}
+              priority
+              className="object-cover"
+            />
           </Link>
 
           {/* Desktop Menu */}
